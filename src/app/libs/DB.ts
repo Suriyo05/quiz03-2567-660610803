@@ -83,3 +83,9 @@ export function writeDB() {
     lowDB.write();
   }
 }
+
+export interface Database{
+  rooms: Room[],
+  messages: Message[],
+  users: User[]
+}
